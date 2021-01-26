@@ -1,4 +1,4 @@
-package com.example.projectiot.ui;
+package com.example.projectiot.ui.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,14 +6,11 @@ import android.os.Bundle;
 
 import com.example.projectiot.R;
 
-public class MainActivity extends AppCompatActivity implements MainContract.View {
-
-    private MainContract.Presenter presenter;
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
     }
-
 }

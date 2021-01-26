@@ -8,6 +8,15 @@ public class TimestampModel {
     private int sec;
     private int year;
 
+    public TimestampModel() {
+        this.day = 0;
+        this.hour = 0;
+        this.min = 0;
+        this.month = 0;
+        this.sec = 0;
+        this.year = 0;
+    }
+
     public TimestampModel(int day, int hour, int min, int month, int sec, int year) {
         this.day = day;
         this.hour = hour;
@@ -39,5 +48,17 @@ public class TimestampModel {
 
     public int getYear() {
         return year;
+    }
+
+    @Override
+    public String toString() {
+        return "TimestampModel{" +
+                "day=" + day +
+                ", hour=" + hour +
+                ", min=" + min +
+                ", month=" + month +
+                ", sec=" + sec +
+                ", year=" + year +
+                '}';
     }
 }
